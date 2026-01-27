@@ -7,7 +7,7 @@ preheader: Transactional email template
   <div class="sm:px-4">
     <table class="m-0 mx-auto">
       <tr>
-        <x-spacer width="4" />
+        <x-spacer height="2" />
         <td class="w-[552px] max-w-full">
           <img
             src="{{ page.imageSource }}/logo.png"
@@ -23,44 +23,88 @@ preheader: Transactional email template
 
           <p class="font-bold text-center">Вибери свою категорію:</p>
 
-          <table class="w-full table-fixed text-center">
-            <thead>
-              <tr>
-                <td class="p-4">
-                  <img
-                    src="{{ page.imageSource }}/categories/web.png"
-                    alt="Web"
-                    class="mx-auto"
-                  />
-                  <p class="font-bold">Web</p>
-                </td>
-                <td class="p-4">
-                  <img
-                    src="{{ page.imageSource }}/categories/data-science.png"
-                    alt="Data Science"
-                    class="mx-auto"
-                  />
-                  <p class="font-bold">Data Science</p>
-                </td>
-                <td class="p-4">
-                  <img
-                    src="{{ page.imageSource }}/categories/devops.png"
-                    alt="DevOps"
-                    class="mx-auto"
-                  />
-                  <p class="font-bold">DevOps</p>
-                </td>
-                <td class="p-4">
-                  <img
-                    src="{{ page.imageSource }}/categories/ai.png"
-                    alt="AI"
-                    class="mx-auto"
-                  />
-                  <p class="font-bold">AI</p>
-                </td>
-              </tr>
-            </thead>
-          </table>
+          <div class="w-full text-center text-0">
+            <div
+              class="inline-block align-top w-1/4 sm:!w-5/12"
+              style="width: 25%"
+            >
+              <div class="p-4">
+                <img
+                  src="{{ page.imageSource }}/categories/web.png"
+                  class="mx-auto"
+                  alt="Web"
+                />
+                <p class="text-base font-bold mt-2">Web</p>
+              </div>
+            </div>
+            <div
+              class="inline-block align-top w-1/4 sm:!w-5/12"
+              style="width: 25%"
+            >
+              <div class="p-4">
+                <img
+                  src="{{ page.imageSource }}/categories/data-science.png"
+                  class="mx-auto"
+                  alt="DS"
+                />
+                <p class="text-base font-bold mt-2">Data Science</p>
+              </div>
+            </div>
+            <div
+              class="inline-block align-top w-1/4 sm:!w-5/12"
+              style="width: 25%"
+            >
+              <div class="p-4">
+                <img
+                  src="{{ page.imageSource }}/categories/devops.png"
+                  class="mx-auto"
+                  alt="DevOps"
+                />
+                <p class="text-base font-bold mt-2">DevOps</p>
+              </div>
+            </div>
+            <div
+              class="inline-block align-top w-1/4 sm:!w-5/12"
+              style="width: 25%"
+            >
+              <div class="p-4">
+                <img
+                  src="{{ page.imageSource }}/categories/ai.png"
+                  class="mx-auto"
+                  alt="AI"
+                />
+                <p class="text-base font-bold mt-2">AI</p>
+              </div>
+            </div>
+          </div>
+
+          <p>Привіт!</p>
+          <p>
+            Пам’ятаєш нас? <br />
+            INT20H — найбільший студентський IT-хакатон в Україні від BEST Kyiv.
+            <br />
+            Ми повертаємось, і цього року дуже хочемо бачити тебе серед
+            учасників
+          </p>
+
+          <p>
+            На тебе чекають нові челенджі, прокачка скілів, сильне ком’юніті
+            однодумців і приємні бонуси для топових команд.
+          </p>
+
+          <p>Якщо хочеш долучитися — реєструйся за посиланням нижче</p>
+
+          <p>
+            Дати: 14-15 березня 2026 <br />
+            Формат: гібрид (онлайн / офлайн)
+          </p>
+          <p>
+            Реєстрація:
+            <a class="lowercase" href="https://int20h.best-kyiv.org/"
+              >https://int20h.best-kyiv.org/</a
+            >
+          </p>
+          <p>Let’s do it again — but even better <br />Чекаємо на тебе!</p>
 
           <x-spacer height="2" />
 
