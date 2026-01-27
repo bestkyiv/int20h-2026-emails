@@ -4,189 +4,315 @@ preheader: Transactional email template
 ---
 
 <x-main>
-  <div class="sm:px-4">
-    <table class="m-0 mx-auto">
-      <tr>
-        <x-spacer height="2" />
-        <td class="w-[552px] max-w-full">
-          <img
-            src="{{ page.imageSource }}/logo.png"
-            alt="INT 20H logo"
-            class="cursor-pointer"
-          />
-
-          <x-spacer height="2"></x-spacer>
-
-          <a href="https://int20h.best-kyiv.org/">
-            <img src="{{ page.imageSource }}/int20h.png" alt="INT20H CTA" />
-          </a>
-
-          <p class="font-bold text-center">Вибери свою категорію:</p>
-
-          <div class="w-full text-center text-0">
-            <div
-              class="inline-block align-top w-1/4 sm:!w-5/12"
-              style="width: 25%"
-            >
-              <div class="p-4">
-                <img
-                  src="{{ page.imageSource }}/categories/web.png"
-                  class="mx-auto"
-                  alt="Web"
-                />
-                <p class="text-base font-bold mt-2">Web</p>
-              </div>
-            </div>
-            <div
-              class="inline-block align-top w-1/4 sm:!w-5/12"
-              style="width: 25%"
-            >
-              <div class="p-4">
-                <img
-                  src="{{ page.imageSource }}/categories/data-science.png"
-                  class="mx-auto"
-                  alt="DS"
-                />
-                <p class="text-base font-bold mt-2">Data Science</p>
-              </div>
-            </div>
-            <div
-              class="inline-block align-top w-1/4 sm:!w-5/12"
-              style="width: 25%"
-            >
-              <div class="p-4">
-                <img
-                  src="{{ page.imageSource }}/categories/devops.png"
-                  class="mx-auto"
-                  alt="DevOps"
-                />
-                <p class="text-base font-bold mt-2">DevOps</p>
-              </div>
-            </div>
-            <div
-              class="inline-block align-top w-1/4 sm:!w-5/12"
-              style="width: 25%"
-            >
-              <div class="p-4">
-                <img
-                  src="{{ page.imageSource }}/categories/ai.png"
-                  class="mx-auto"
-                  alt="AI"
-                />
-                <p class="text-base font-bold mt-2">AI</p>
-              </div>
-            </div>
-          </div>
-
-          <p>Привіт!</p>
-          <p>
-            Пам’ятаєш нас? <br />
-            INT20H — найбільший студентський IT-хакатон в Україні від BEST Kyiv.
-            <br />
-            Ми повертаємось, і цього року дуже хочемо бачити тебе серед
-            учасників
-          </p>
-
-          <p>
-            На тебе чекають нові челенджі, прокачка скілів, сильне ком’юніті
-            однодумців і приємні бонуси для топових команд.
-          </p>
-
-          <p>Якщо хочеш долучитися — реєструйся за посиланням нижче</p>
-
-          <p>
-            Дати: 14-15 березня 2026 <br />
-            Формат: гібрид (онлайн / офлайн)
-          </p>
-          <p>
-            Реєстрація:
-            <a class="lowercase" href="https://int20h.best-kyiv.org/"
-              >https://int20h.best-kyiv.org/</a
-            >
-          </p>
-          <p>Let’s do it again — but even better <br />Чекаємо на тебе!</p>
-
-          <x-spacer height="2" />
-
-          <p class="font-bold text-center">Реєстрація закривається через:</p>
-
-          <x-spacer height="1" />
-
-          <table class="w-full text-center">
+  <table
+    width="100%"
+    cellpadding="0"
+    cellspacing="0"
+    role="presentation"
+    style="
+      background-color: #070b26;
+      background-image: linear-gradient(#070b26, #070b26);
+    "
+  >
+    <tr>
+      <td align="center" style="background-color: #070b26">
+        <div class="sm:px-4">
+          <table
+            class="m-0 mx-auto"
+            width="100%"
+            role="presentation"
+            style="max-width: 552px"
+          >
             <tr>
-              <td>
-                <img src="{{ page.imageSource }}/timer.png" alt="Timer" />
-              </td>
-              <td><img src="{{ page.countdownTimer }}" alt="Countdown" /></td>
-              <td>
-                <img src="{{ page.imageSource }}/timer.png" alt="Timer" />
-              </td>
-            </tr>
-          </table>
+              <td class="w-[552px] max-w-full" align="center">
+                <x-spacer height="2" />
 
-          <x-spacer height="4" />
+                <img
+                  src="{{ page.imageSource }}/logo.png"
+                  alt="INT 20H logo"
+                  width="300"
+                  align="left"
+                />
 
-          <table class="w-full">
-            <tr>
-              <td>
-                <table class="border-separate border-spacing-x-4">
+                <x-spacer height="6"></x-spacer>
+
+                <a href="https://int20h.best-kyiv.org/">
+                  <img
+                    src="{{ page.imageSource }}/int20h.png"
+                    alt="INT20H CTA"
+                    width="552"
+                    class="max-w-full h-auto border-0 block"
+                  />
+                </a>
+
+                <p
+                  class="font-bold text-center text-white text-lg uppercase drop-shadow-soft"
+                >
+                  Вибери свою категорію:
+                </p>
+
+                <table
+                  width="100%"
+                  cellpadding="0"
+                  cellspacing="0"
+                  role="presentation"
+                >
                   <tr>
-                    <td>
-                      <a href="https://best-kyiv.org/">
-                        <img
-                          src="{{ page.imageSource }}/footer/best.png"
-                          alt="BEST Kyiv"
-                        />
-                      </a>
+                    <td
+                      class="w-1/4 sm:w-full sm:block p-2"
+                      align="center"
+                      valign="top"
+                    >
+                      <table width="100%" role="presentation">
+                        <tr>
+                          <td align="center" class="bg-opacity-0 p-2">
+                            <img
+                              src="{{ page.imageSource }}/categories/web.png"
+                              width="100"
+                              class="mx-auto block max-w-full drop-shadow-soft"
+                              alt="Web"
+                            />
+                            <p class="text-base font-bold mt-2 m-0 text-white">
+                              Web
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
                     </td>
-                    <td>
-                      <a href="https://kpi.ua/">
-                        <img
-                          src="{{ page.imageSource }}/footer/kpi.png"
-                          alt="Kyiv Polytechnic Institute"
-                        />
-                      </a>
+
+                    <td
+                      class="w-1/4 sm:w-full sm:block p-2"
+                      align="center"
+                      valign="top"
+                    >
+                      <table width="100%" role="presentation">
+                        <tr>
+                          <td align="center" class="bg-opacity-0 p-2">
+                            <img
+                              src="{{ page.imageSource }}/categories/data-science.png"
+                              width="100"
+                              class="mx-auto block max-w-full drop-shadow-soft"
+                              alt="DS"
+                            />
+                            <p class="text-base font-bold mt-2 m-0 text-white">
+                              Data Science
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+
+                    <td
+                      class="w-1/4 sm:w-full sm:block p-2"
+                      align="center"
+                      valign="top"
+                    >
+                      <table width="100%" role="presentation">
+                        <tr>
+                          <td align="center" class="bg-opacity-0 p-2">
+                            <img
+                              src="{{ page.imageSource }}/categories/devops.png"
+                              width="100"
+                              class="mx-auto block max-w-full drop-shadow-soft"
+                              alt="DevOps"
+                            />
+                            <p class="text-base font-bold mt-2 m-0 text-white">
+                              DevOps
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+
+                    <td
+                      class="w-1/4 sm:w-full sm:block p-2"
+                      align="center"
+                      valign="top"
+                    >
+                      <table width="100%" role="presentation">
+                        <tr>
+                          <td align="center" class="bg-opacity-0 p-2">
+                            <img
+                              src="{{ page.imageSource }}/categories/ai.png"
+                              width="100"
+                              class="mx-auto block max-w-full drop-shadow-soft"
+                              alt="AI"
+                            />
+                            <p
+                              class="text-base font-bold mt-2 m-0 text-white uppercase"
+                            >
+                              AI
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
                     </td>
                   </tr>
                 </table>
-              </td>
-              <td>
-                <table class="border-separate border-spacing-x-4">
+
+                <div class="text-white" align="left">
+                  <p class="uppercase">Привіт!</p>
+                  <p class="uppercase">
+                    Пам’ятаєш нас? <br />
+                    INT20H — найбільший студентський IT-хакатон в Україні від
+                    BEST Kyiv.
+                    <br />
+                    Ми повертаємось, і цього року дуже хочемо бачити тебе серед
+                    учасників
+                  </p>
+
+                  <p class="uppercase">
+                    На тебе чекають нові челенджі, прокачка скілів, сильне
+                    ком’юніті однодумців і приємні бонуси для топових команд.
+                  </p>
+
+                  <p class="uppercase">
+                    Якщо хочеш долучитися — реєструйся за посиланням нижче
+                  </p>
+
+                  <p class="uppercase">
+                    Дати: 14-15 березня 2026 <br />
+                    Формат: гібрид (онлайн / офлайн)
+                  </p>
+                  <p class="uppercase">
+                    Реєстрація:
+                    <a
+                      class="lowercase text-blue-400 underline"
+                      href="https://int20h.best-kyiv.org/"
+                      >https://int20h.best-kyiv.org/</a
+                    >
+                  </p>
+                  <p class="uppercase">
+                    Let’s do it again — but even better <br />Чекаємо на тебе!
+                  </p>
+                </div>
+
+                <x-spacer height="2" />
+
+                <p
+                  class="font-bold text-center text-white text-lg uppercase drop-shadow-soft"
+                >
+                  Реєстрація закривається через:
+                </p>
+
+                <x-spacer height="1" />
+
+                <table
+                  class="w-full text-center"
+                  width="100%"
+                  role="presentation"
+                >
                   <tr>
-                    <td>
-                      <a href="https://www.instagram.com/best_kyiv/?hl=ua">
-                        <img
-                          src="{{ page.imageSource }}/footer/instagram.png"
-                          alt="Instagram"
-                        />
-                      </a>
+                    <td align="center">
+                      <img
+                        src="{{ page.imageSource }}/timer.png"
+                        alt="Timer"
+                        class="inline-block"
+                      />
                     </td>
-                    <td>
-                      <a
-                        href="https://www.linkedin.com/company/best-kyiv/?originalSubdomain=ua"
+                    <td align="center">
+                      <img
+                        src="{{ page.countdownTimer }}"
+                        alt="Countdown"
+                        class="inline-block drop-shadow-softPink"
+                      />
+                    </td>
+                    <td align="center">
+                      <img
+                        src="{{ page.imageSource }}/timer.png"
+                        alt="Timer"
+                        class="inline-block"
+                      />
+                    </td>
+                  </tr>
+                </table>
+
+                <x-spacer height="4" mso-height="4" />
+
+                <table class="w-full" width="100%" role="presentation">
+                  <tr>
+                    <td align="left" valign="top" class="w-1/2">
+                      <table class="border-separate" role="presentation">
+                        <tr>
+                          <td class="px-2">
+                            <a href="https://best-kyiv.org/">
+                              <img
+                                src="{{ page.imageSource }}/footer/best.png"
+                                alt="BEST Kyiv"
+                                width="114"
+                                class="block"
+                              />
+                            </a>
+                          </td>
+                          <td class="px-2">
+                            <a href="https://kpi.ua/">
+                              <img
+                                src="{{ page.imageSource }}/footer/kpi.png"
+                                alt="Kyiv Polytechnic Institute"
+                                width="187"
+                                class="block"
+                              />
+                            </a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td
+                      align="right"
+                      valign="middle"
+                      class="w-1/4 border-separate"
+                    >
+                      <table
+                        class="border-separate w-full"
+                        align="right"
+                        role="presentation"
                       >
-                        <img
-                          src="{{ page.imageSource }}/footer/linkedin.png"
-                          alt="LinkedIn"
-                        />
-                      </a>
-                    </td>
-                    <td>
-                      <a href="https://t.me/bestkyiv">
-                        <img
-                          src="{{ page.imageSource }}/footer/telegram.png"
-                          alt="Telegram"
-                        />
-                      </a>
+                        <tr>
+                          <td class="px-2">
+                            <a
+                              href="https://www.instagram.com/best_kyiv/?hl=ua"
+                            >
+                              <img
+                                src="{{ page.imageSource }}/footer/instagram.png"
+                                alt="Instagram"
+                                width="40"
+                                class="block"
+                              />
+                            </a>
+                          </td>
+                          <td class="px-2">
+                            <a
+                              href="https://www.linkedin.com/company/best-kyiv/?originalSubdomain=ua"
+                            >
+                              <img
+                                src="{{ page.imageSource }}/footer/linkedin.png"
+                                alt="LinkedIn"
+                                width="40"
+                                class="block"
+                              />
+                            </a>
+                          </td>
+                          <td class="px-2">
+                            <a href="https://t.me/bestkyiv">
+                              <img
+                                src="{{ page.imageSource }}/footer/telegram.png"
+                                alt="Telegram"
+                                width="40"
+                                class="block"
+                              />
+                            </a>
+                          </td>
+                        </tr>
+                      </table>
                     </td>
                   </tr>
                 </table>
+                <x-spacer height="2" />
               </td>
             </tr>
           </table>
-          <x-spacer height="2" />
-        </td>
-      </tr>
-    </table>
-  </div>
+        </div>
+      </td>
+    </tr>
+  </table>
 </x-main>
