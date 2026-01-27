@@ -1,0 +1,148 @@
+---
+bodyClass: bg-[#070b26]
+preheader: Transactional email template
+---
+
+<x-main>
+  <div class="sm:px-4">
+    <table class="m-0 mx-auto">
+      <tr>
+        <x-spacer width="4" />
+        <td class="w-[552px] max-w-full">
+          <img
+            src="{{ page.imageSource }}/logo.png"
+            alt="INT 20H logo"
+            class="cursor-pointer"
+          />
+
+          <x-spacer height="2"></x-spacer>
+
+          <a href="https://int20h.best-kyiv.org/">
+            <img src="{{ page.imageSource }}/int20h.png" alt="INT20H CTA" />
+          </a>
+
+          <p class="font-bold text-center">Вибери свою категорію:</p>
+
+          <table class="w-full table-fixed text-center">
+            <thead>
+              <tr>
+                <td class="p-4">
+                  <img
+                    src="{{ page.imageSource }}/categories/web.png"
+                    alt="Web"
+                    class="mx-auto"
+                  />
+                  <p class="font-bold">Web</p>
+                </td>
+                <td class="p-4">
+                  <img
+                    src="{{ page.imageSource }}/categories/data-science.png"
+                    alt="Data Science"
+                    class="mx-auto"
+                  />
+                  <p class="font-bold">Data Science</p>
+                </td>
+                <td class="p-4">
+                  <img
+                    src="{{ page.imageSource }}/categories/devops.png"
+                    alt="DevOps"
+                    class="mx-auto"
+                  />
+                  <p class="font-bold">DevOps</p>
+                </td>
+                <td class="p-4">
+                  <img
+                    src="{{ page.imageSource }}/categories/ai.png"
+                    alt="AI"
+                    class="mx-auto"
+                  />
+                  <p class="font-bold">AI</p>
+                </td>
+              </tr>
+            </thead>
+          </table>
+
+          <x-spacer height="2" />
+
+          <p class="font-bold text-center">Реєстрація закривається через:</p>
+
+          <x-spacer height="1" />
+
+          <table class="w-full text-center">
+            <tr>
+              <td>
+                <img src="{{ page.imageSource }}/timer.png" alt="Timer" />
+              </td>
+              <td><img src="{{ page.countdownTimer }}" alt="Countdown" /></td>
+              <td>
+                <img src="{{ page.imageSource }}/timer.png" alt="Timer" />
+              </td>
+            </tr>
+          </table>
+
+          <x-spacer height="4" />
+
+          <table class="w-full">
+            <tr>
+              <td>
+                <table class="border-separate border-spacing-x-4">
+                  <tr>
+                    <td>
+                      <a href="https://best-kyiv.org/">
+                        <img
+                          src="{{ page.imageSource }}/footer/best.png"
+                          alt="BEST Kyiv"
+                        />
+                      </a>
+                    </td>
+                    <td>
+                      <a href="https://kpi.ua/">
+                        <img
+                          src="{{ page.imageSource }}/footer/kpi.png"
+                          alt="Kyiv Polytechnic Institute"
+                        />
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td>
+                <table class="border-separate border-spacing-x-4">
+                  <tr>
+                    <td>
+                      <a href="https://www.instagram.com/best_kyiv/?hl=ua">
+                        <img
+                          src="{{ page.imageSource }}/footer/instagram.png"
+                          alt="Instagram"
+                        />
+                      </a>
+                    </td>
+                    <td>
+                      <a
+                        href="https://www.linkedin.com/company/best-kyiv/?originalSubdomain=ua"
+                      >
+                        <img
+                          src="{{ page.imageSource }}/footer/linkedin.png"
+                          alt="LinkedIn"
+                        />
+                      </a>
+                    </td>
+                    <td>
+                      <a href="https://t.me/bestkyiv">
+                        <img
+                          src="{{ page.imageSource }}/footer/telegram.png"
+                          alt="Telegram"
+                        />
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+          <x-spacer height="2" />
+        </td>
+      </tr>
+    </table>
+  </div>
+</x-main>
