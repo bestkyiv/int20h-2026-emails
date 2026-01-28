@@ -35,7 +35,7 @@
         h4,
         h5,
         h6 {
-          font-family: "Segoe UI", sans-serif;
+          font-family: "Pixeloid Sans", "Nunito Sans", sans-serif;
           mso-line-height-rule: exactly;
         }
         .mso-break-all {
@@ -59,8 +59,8 @@
       @font-face {
         font-family: "Pixeloid Sans";
         src:
-          url("{{page.externalAssets}}/PixeloidSans.woff2") format("woff2"),
-          url("{{page.externalAssets}}/PixeloidSans.woff") format("woff");
+          url("{{page.fontSource}}/PixeloidSans.woff2") format("woff2"),
+          url("{{page.fontSource}}/PixeloidSans.woff") format("woff");
       }
     </style>
     <stack name="head" />
@@ -81,7 +81,6 @@
       aria-roledescription="email"
       aria-label="{{{ page.title || '' }}}"
       lang="{{ page.language || 'en' }}"
-      class="font-pixeloid"
     >
       <yield />
     </div>

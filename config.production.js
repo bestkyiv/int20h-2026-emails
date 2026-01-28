@@ -7,13 +7,12 @@ export default {
     },
   },
 
-  externalAssets: process.env.EXTERNAL_ASSETS_URL,
   countdownTimer: process.env.COUNTDOWN_TIMER_URL,
 
   beforeCreate({ config }) {
     const cloudName = process.env.CLOUDINARY_CLOUD_NAME;
     const githubRepo =
-      "https://raw.githubusercontent.com/bestkyiv/int20h-2026-emails/refs/heads/main/images";
+      "https://raw.githubusercontent.com/bestkyiv/int20h-2026-emails/refs/heads/main";
 
     if (!cloudName) {
       throw new Error("STOP: CLOUDINARY_CLOUD_NAME is missing in .env");
@@ -21,7 +20,8 @@ export default {
 
     // 3. Construct the "Fetch" URL
     // Result: https://res.cloudinary.com/xyz/image/fetch/f_png,q_auto/https://raw.github.../images
-    config.imageSource = `https://res.cloudinary.com/${cloudName}/image/fetch/f_png,q_auto/${githubRepo}`;
+    config.imageSource = `https://res.cloudinary.com/${cloudName}/image/fetch/f_png,q_auto/${githubRepo}/images`;
+    config.fontSource = `https://res.cloudinary.com/${cloudName}/raw/fetch/f_auto,q_auto/${githubRepo}/fonts`;
   },
 
   css: {
