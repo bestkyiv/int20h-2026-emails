@@ -8,6 +8,7 @@ export default {
   },
 
   countdownTimer: process.env.COUNTDOWN_TIMER_URL,
+  fontSource: process.env.FONT_SOURCE_URL,
 
   beforeCreate({ config }) {
     const cloudName = process.env.CLOUDINARY_CLOUD_NAME;
@@ -21,7 +22,6 @@ export default {
     // 3. Construct the "Fetch" URL
     // Result: https://res.cloudinary.com/xyz/image/fetch/f_png,q_auto/https://raw.github.../images
     config.imageSource = `https://res.cloudinary.com/${cloudName}/image/fetch/f_png,q_auto/${githubRepo}/images`;
-    config.fontSource = `https://res.cloudinary.com/${cloudName}/raw/fetch/f_auto,q_auto/${githubRepo}/fonts`;
   },
 
   css: {

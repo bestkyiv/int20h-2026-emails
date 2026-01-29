@@ -45,7 +45,7 @@ preheader: INT20H повертається 🚀
                 </a>
 
                 <p
-                  class="font-bold text-center text-white text-lg uppercase drop-shadow-soft font-pixeloid"
+                  class="font-bold text-center text-white text-lg uppercase font-pixeloid"
                 >
                   Вибери свою категорію:
                 </p>
@@ -71,7 +71,7 @@ preheader: INT20H повертається 🚀
                               <img
                                 src="{{ page.imageSource }}/categories/web.png"
                                 width="100"
-                                class="mx-auto block max-w-full drop-shadow-soft"
+                                class="mx-auto block max-w-full"
                                 alt="Web"
                               />
                               <p
@@ -98,7 +98,7 @@ preheader: INT20H повертається 🚀
                               <img
                                 src="{{ page.imageSource }}/categories/data-science.png"
                                 width="100"
-                                class="mx-auto block max-w-full drop-shadow-soft"
+                                class="mx-auto block max-w-full"
                                 alt="DS"
                               />
                               <p
@@ -125,7 +125,7 @@ preheader: INT20H повертається 🚀
                               <img
                                 src="{{ page.imageSource }}/categories/devops.png"
                                 width="100"
-                                class="mx-auto block max-w-full drop-shadow-soft"
+                                class="mx-auto block max-w-full"
                                 alt="DevOps"
                               />
                               <p
@@ -152,7 +152,7 @@ preheader: INT20H повертається 🚀
                               <img
                                 src="{{ page.imageSource }}/categories/ai.png"
                                 width="100"
-                                class="mx-auto block max-w-full drop-shadow-soft"
+                                class="mx-auto block max-w-full"
                                 alt="AI"
                               />
                               <p
@@ -208,7 +208,7 @@ preheader: INT20H повертається 🚀
                 <x-spacer height="32px" />
 
                 <p
-                  class="font-bold text-center text-white text-lg uppercase drop-shadow-soft font-pixeloid"
+                  class="font-bold text-center text-white text-lg uppercase font-pixeloid"
                 >
                   Реєстрація закривається через:
                 </p>
@@ -232,7 +232,7 @@ preheader: INT20H повертається 🚀
                       <img
                         src="{{ page.countdownTimer }}"
                         alt="Countdown"
-                        class="inline-block drop-shadow-softPink"
+                        class="inline-block Pink"
                       />
                     </td>
                     <td align="center">
@@ -325,6 +325,22 @@ preheader: INT20H повертається 🚀
                     </td>
                   </tr>
                 </table>
+                <x-spacer height="32px" />
+
+                <a
+                  href="{{UnsubscribeURL}}"
+                  class="font-pixeloid text-blue-400 underline"
+                  >Відписатися від розсилки</a
+                >
+                <x-spacer height="16px" />
+
+                <a
+                  href="{{RewardsURL}}"
+                  class="font-pixeloid text-blue-400 underline"
+                  >EmailOctopus</a
+                >
+
+                <p class="font-pixeloid text-white">{{SenderInfoLine}}</p>
                 <x-spacer height="32px" />
               </td>
             </tr>
