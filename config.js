@@ -5,6 +5,7 @@ export default {
   // Define defaults here
   countdownTimer: "http://localhost:8080",
   imageSource: "",
+  transparentImageSource: "",
   fontSource: "http://localhost:8080/assets",
 
   build: {
